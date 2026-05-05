@@ -7,6 +7,8 @@ import lombok.Data;
 @Data
 public class AuthRequest {
     @NotBlank
+    private String username;
+    @NotBlank
     @Pattern(regexp = "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$")
     private String email;
     @NotBlank

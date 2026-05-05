@@ -11,5 +11,5 @@ public class QrResquest {
     @NotBlank
     @Pattern(regexp = "^[0-9]{9,12}$")
     private String accountNumber;
-    private BigDecimal amount;
+    private BigDecimal fixedAmount;
 }
